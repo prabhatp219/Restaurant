@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu - Pcube N</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+        .menu-section {
+            flex: 1;
+            min-width: 300px;
+            margin: 0.5rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            text-align: center;
+            color:white;
+        }
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item span {
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="logo-text">P<sup>3</sup>N Ka Dhaba</span></h1>
+        <p>Explore our delicious menu of starters and meals</p>
+    </header>
+    <main>
+        <!-- Starters Section -->
+        <section class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <p>Pizza</p><span>₹299</span>
+            </div>
+            <div class="menu-item">
+                <p>Pasta</p><span>₹199</span>
+            </div>
+            <div class="menu-item">
+                <p>Burger</p><span>₹149</span>
+            </div>
+            <div class="menu-item">
+                <p>Crispy Spring Rolls</p><span>₹120</span>
+            </div>
+            <div class="menu-item">
+                <p>Paneer Tikka</p><span>₹180</span>
+            </div>
+            <div class="menu-item">
+                <p>Chicken Lollipop</p><span>₹200</span>
+            </div>
+            <div class="menu-item">
+                <p>Stuffed Mushrooms</p><span>₹150</span>
+            </div>
+            <div class="menu-item">
+                <p>Cheese Garlic Bread</p><span>₹130</span>
+            </div>
+            <div class="menu-item">
+                <p>Vegetable Manchurian</p><span>₹170</span>
+            </div>
+            <div class="menu-item">
+                <p>Fish Fingers</p><span>₹220</span>
+            </div>
+        </section>
+        
+        <!-- Meals Section -->
+        <section class="menu-section">
+            <h2>Meals</h2>
+            <div class="menu-item">
+                <p>Butter Chicken with Naan</p><span>₹350</span>
+            </div>
+            <div class="menu-item">
+                <p>Paneer Butter Masala with Rice</p><span>₹300</span>
+            </div>
+            <div class="menu-item">
+                <p>Mutton Rogan Josh with Paratha</p><span>₹450</span>
+            </div>
+            <div class="menu-item">
+                <p>Vegetable Biryani with Raita</p><span>₹250</span>
+            </div>
+            <div class="menu-item">
+                <p>Fish Curry with Steamed Rice</p><span>₹400</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 <span class="logo-text">P<sup>3</sup>N Ka Dhaba</span>. All rights reserved.</p>
+    </footer>
+</body>
+</html>

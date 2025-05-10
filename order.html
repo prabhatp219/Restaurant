@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food - Pcube N</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color:yellowgreen;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 1rem;
+        }
+        .order-section {
+            margin-bottom: 2rem;
+        }
+        .menu-category {
+            margin-bottom: 1rem;
+        }
+        h1{
+            text-align: center;
+            color:white;
+        }
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .menu-item input[type="number"] {
+            width: 50px;
+        }
+        button {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.7rem 2rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            text-align: center;
+        }
+        button {
+         background: #ff6347;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         cursor: pointer;
+        }
+button:hover {
+    background: #e55347;
+}
+    </style>
+</head>
+<body>
+    <header >
+        <h1><span class="logo-text">P<sup>3</sup>N Ka Dhaba</span></h1>
+    </header>
+    <main>
+        <form id="order-form">
+            <!-- Starters Section -->
+            <div class="order-section">
+                <h2>Starters</h2>
+                <div class="menu-category">
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Pizza" data-price="299"> Pizza - ₹299
+                        </label>
+                        <input type="number" name="quantity-Pizza" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Pasta" data-price="199"> Pasta - ₹199
+                        </label>
+                        <input type="number" name="quantity-Pasta" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Burger" data-price="149"> Burger - ₹149
+                        </label>
+                        <input type="number" name="quantity-Burger" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Crispy Spring Rolls" data-price="120"> Crispy Spring Rolls - ₹120
+                        </label>
+                        <input type="number" name="quantity-Crispy-Spring-Rolls" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Paneer Tikka" data-price="180"> Paneer Tikka - ₹180
+                        </label>
+                        <input type="number" name="quantity-Paneer-Tikka" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Chicken Lollipop" data-price="200"> Chicken Lollipop - ₹200
+                        </label>
+                        <input type="number" name="quantity-Chicken-Lollipop" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Stuffed Mushrooms" data-price="150"> Stuffed Mushrooms - ₹150
+                        </label>
+                        <input type="number" name="quantity-Stuffed-Mushrooms" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Cheese Garlic Bread" data-price="130"> Cheese Garlic Bread - ₹130
+                        </label>
+                        <input type="number" name="quantity-Cheese-Garlic-Bread" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Vegetable Manchurian" data-price="170"> Vegetable Manchurian - ₹170
+                        </label>
+                        <input type="number" name="quantity-Vegetable-Manchurian" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Fish Fingers" data-price="220"> Fish Fingers - ₹220
+                        </label>
+                        <input type="number" name="quantity-Fish-Fingers" min="1" placeholder="Qty">
+                    </div>
+                </div>
+            </div>
+            <!-- Meals Section -->
+            <div class="order-section">
+                <h2>Meals</h2>
+                <div class="menu-category">
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Butter Chicken with Naan" data-price="350"> Butter Chicken with Naan - ₹350
+                        </label>
+                        <input type="number" name="quantity-Butter-Chicken" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Paneer Butter Masala with Rice" data-price="300"> Paneer Butter Masala with Rice - ₹300
+                        </label>
+                        <input type="number" name="quantity-Paneer-Butter-Masala" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Mutton Rogan Josh with Paratha" data-price="450"> Mutton Rogan Josh with Paratha - ₹450
+                        </label>
+                        <input type="number" name="quantity-Mutton-Rogan-Josh" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Vegetable Biryani with Raita" data-price="250"> Vegetable Biryani with Raita - ₹250
+                        </label>
+                        <input type="number" name="quantity-Vegetable-Biryani" min="1" placeholder="Qty">
+                    </div>
+                    <div class="menu-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Fish Curry with Steamed Rice" data-price="400"> Fish Curry with Steamed Rice - ₹400
+                        </label>
+                        <input type="number" name="quantity-Fish-Curry" min="1" placeholder="Qty">
+                    </div>
+                </div>
+            </div>
+            <!-- Calculate Button -->
+            <button type="button" id="calculate-total">Calculate Total</button>
+            <p>Total Amount: ₹<span id="total">0</span></p>
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+    <script src="order.js"></script>
+</body>
+</html>
